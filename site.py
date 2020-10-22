@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 from pymorphy2 import MorphAnalyzer
 from more_itertools import unique_everseen
+from site.views import app 
 
 from nltk.tokenize import word_tokenize
 import nltk
