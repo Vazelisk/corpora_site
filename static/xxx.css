@@ -1,0 +1,13 @@
+body {
+  background-color: lightblue;
+}
+
+legend {
+  color: navy;
+  margin-left: 60px;
+}
+
+p {
+  color: navy;
+  margin-left: 20px;
+}

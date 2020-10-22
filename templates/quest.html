@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='xxx.css') }}">
+    <title>Корпус</title>
+<style>
+#para1 {
+  text-align: center;
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+<form action="/process" method ='post'>
+    <fieldset>
+    <legend id="para1"><b>Поиск по корпусу</b></legend>
+    <p><i>Введи слово и узнай правду</i></p>
+	Введите ваш запрос<br>
+    <input id="inquery" name="inquery"  required pattern='[A-Za-zА-Яа-яЁё]+'><br>
+	
+	
+	</div><br>
+	<p><input id="submit" type="submit" value="Отправить"></p>
+    </fieldset>
+</form>
+</body>
+</html>
