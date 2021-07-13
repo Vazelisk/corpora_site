@@ -3,12 +3,15 @@ import re
 import pandas as pd
 from pymorphy2 import MorphAnalyzer
 from more_itertools import unique_everseen
-
+import os
 from nltk.tokenize import word_tokenize
 import nltk
 
+THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
+data = pd.read_csv(os.path.join(THIS_FOLDER, 'dataset.csv'))
+
 nltk.download('punkt')
-data = pd.read_csv('dataset.csv')
+#data = pd.read_csv('dataset.csv')
 
 app = Flask(__name__)
 
