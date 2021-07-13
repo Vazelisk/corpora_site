@@ -11,12 +11,10 @@ THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
 data = pd.read_csv(os.path.join(THIS_FOLDER, 'dataset.csv'))
 
 nltk.download('punkt')
-#data = pd.read_csv('dataset.csv')
 
 app = Flask(__name__)
 
 
-# , methods=['get']
 @app.route('/', methods=['GET', 'POST'])
 def quest():
     return render_template('quest.html')
@@ -228,7 +226,6 @@ def answer_process():
     with open('templates\index.html', 'r') as text_file:
         text_file = text_file.read()
         return text_file
-    # return render_template('greeting.html', inquery=inquery)
 
 
 if __name__ == "__main__":
